@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Cursed Timer ULiL';
+    src: url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');;
+    /* If you have multiple formats, add them here */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url('img/Cunningham-Kawhi.webp');
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-position: center; /* Centers the image in the window */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    background-color: #FFFFFF;
+}
+
+.team-score, .time-period {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#time-display {
+    font-size: 30px; /* Adjust this value to your preferred size */
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+h4.score, h4.time, h4.period {
+    background-color: #000;
+    color: #f77;
+    padding: 20px;
+    width: 100px;
+    font-size: 40px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+.btn-div {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+.btn {
+    margin: 10px;
+    background-color: #ddd;
+    border: none;
+    font-size: 16px;
+}
+
+.message {
+    position: absolute;
+    top: 0; /* Aligns the message to the top of the .team-score container */
+    width: 100%; /* Makes the message span the entire width of the container */
+    text-align: center; /* Centers the message text */
+    font-size: 20px;
+    color: #f77;
+    font-weight: bold;
+    z-index: 10; /* Ensures the message appears on top of other elements */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a semi-transparent background */
+    padding: 5px; /* Adds some space around the text */
+}
+
+#home-message {
+    left: 0; /* Position message in the top-left corner */
+}
+
+#guest-message {
+    right: 0; /* Position message in the top-right corner */
+}
+
